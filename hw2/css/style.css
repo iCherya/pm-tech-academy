@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: calc(100vh - 4vmax);
+    margin: 2vmax auto;
+    max-width: 100vh;
+}
+
+.left,
+.content,
+.right {
+    border: 1px solid black;
+}

@@ -1,0 +1,13 @@
+body {
+    display: grid;
+    grid-template-rows: 25% 1fr 25%;
+    gap: 2vmax;
+}
+
+.header,
+.main,
+.footer {
+    display: grid;
+    grid-template-columns: 25% 1fr 25%;
+    gap: 2vmax;
+}
