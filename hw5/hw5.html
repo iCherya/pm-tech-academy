@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./hw5.js" defer></script>
+        <title>Homework 5</title>
+        <style>
+            h1 {
+                text-align: center;
+            }
+            section {
+                margin: 20px;
+            }
+            section:after {
+                display: block;
+                content: ' ';
+                height: 1px;
+                width: 100%;
+                background-color: lightgrey;
+            }
+            .output {
+                margin: 10px 0;
+                padding: 10px;
+                background-color: lightgrey;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Homework 5</h1>
+
+        <section id="task-1">
+            <h2>Task1</h2>
+            <p>
+                Запросить у пользователя два числа, n и m - вывести все числа в диапазоне между
+                ними.
+            </p>
+            <form>
+                <input type="number" />
+                <input type="number" />
+                <button id="task-1-btn">Task</button>
+            </form>
+            <div class="output"></div>
+        </section>
+
+        <section id="task-2">
+            <h2>Task2</h2>
+            <p>
+                Запросить у пользователя два числа, написать функцию при помощи стрелочного
+                синтаксиса и аналог с function expression которая бы возводила первое число в
+                степень второго введенного числа, или в степень 2 по умолчанию
+            </p>
+            <form>
+                <input type="number" />
+                <input type="number" />
+                <button id="task-2-btn">Task</button>
+            </form>
+            <div class="output"></div>
+        </section>
+
+        <section id="numbers-1">
+            <h2>Numbers. Task 1</h2>
+            <p>
+                Запросить у пользователя два числа с плавающей точкой - умножить на 0.3 и округлить
+                до ближайшего целого числа.
+            </p>
+            <form>
+                <input type="number" />
+                <input type="number" />
+                <button id="numbers-1-btn">Task</button>
+            </form>
+            <div class="output"></div>
+        </section>
+
+        <section id="numbers-2">
+            <h2>Numbers. Task 2</h2>
+            <p>
+                Запросить у пользователя два числа - вывести случайное целое число в этом диапазоне.
+            </p>
+            <form>
+                <input type="number" />
+                <input type="number" />
+                <button id="numbers-2-btn">Task</button>
+            </form>
+            <div class="output"></div>
+        </section>
+
+        <section id="strings-1">
+            <h2>Strings. Task 1</h2>
+            <p>
+                Запросить у пользователя две строки, найти сколько раз повторяется вторая в первой.
+                Вывести индексы всех вхождений.
+            </p>
+            <form>
+                <input type="text" />
+                <input type="text" />
+                <button id="strings-1-btn">Task</button>
+            </form>
+            <div class="output"></div>
+        </section>
+    </body>
+</html>
