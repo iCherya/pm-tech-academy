@@ -33,3 +33,8 @@ a {
 a:hover {
     color: #666;
 }
+.errorMessage {
+    text-align: center;
+    font-size: 14px;
+    color: tomato;
+}

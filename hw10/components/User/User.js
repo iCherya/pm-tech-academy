@@ -20,7 +20,11 @@ export default class User {
         const url = new URL(`${GITHUB_API.searchUser}/${login}`, GITHUB_API.base);
 
         fetchAPI(url.href)
-            .then((data) => User.renderSections(data))
+            .then((data) => {
+                if (!data) return;
+                User.renderSections(data);
+            })
+            .then(() => User.loader.remove())
             .catch(console.log);
     }
 
@@ -33,7 +37,5 @@ export default class User {
                 return section.render(userData) || '';
             })
         );
-
-        User.loader.remove();
     }
 }

@@ -28,12 +28,25 @@ export function debaunce(fn, ms) {
 export function fetchAPI(href) {
     return fetch(href)
         .then((response) => {
-            if (response.status !== 200) {
-                throw Error('Something bad happend');
+            if (response.status === 403) {
+                throw Error(`Too many requests`);
             }
+            if (response.status !== 200) {
+                throw Error(`Something bad happend`);
+            }
+
             return response.json();
         })
         .catch((error) => {
-            console.log(error);
+            const errorMessage = createElement(
+                'div',
+                {
+                    className: 'errorMessage'
+                },
+                `${error.message}`
+            );
+
+            document.body.prepend(errorMessage);
+            setTimeout(() => errorMessage.remove(), 2000);
         });
 }
