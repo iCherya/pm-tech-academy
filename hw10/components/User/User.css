@@ -1,0 +1,27 @@
+.user {
+    margin-top: 30px;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.user > div {
+    flex: 1 1 100px;
+}
+.user > div h2 {
+    border-bottom: 1px dashed black;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: black;
+    font-size: 30px;
+}
+.disclaimer {
+    font-size: 14px;
+    color: #aaa;
+    margin: 10px 0;
+}
+@media (max-width: 765px) {
+    .user {
+        flex-wrap: wrap;
+    }
+}

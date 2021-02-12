@@ -1,0 +1,35 @@
+@import './reset.css';
+@import './loader.css';
+@import '../components/Search/Search.css';
+@import '../components/SearchItem/SearchItem.css';
+@import '../components/User/User.css';
+@import '../components/UserRepositories/UserRepositories.css';
+@import '../components/UserInformation/UserInformation.css';
+@import '../components/UserSocial/UserSocial.css';
+
+html {
+    font-family: 'Roboto', sans-serif;
+    color: #040d0d;
+}
+body {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
+header {
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+h1 {
+    margin: 0 auto 15px;
+}
+a {
+    color: black;
+}
+a:hover {
+    color: #666;
+}

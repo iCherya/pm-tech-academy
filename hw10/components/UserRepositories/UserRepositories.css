@@ -1,0 +1,33 @@
+.repos {
+    font-size: 14px;
+}
+.repos-disclaimer span {
+    font-weight: bold;
+}
+.repo-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.repo-item img {
+    height: 14px;
+}
+.repo-name a {
+    font-size: 20px;
+}
+.repo-stats {
+    margin-top: 15px;
+    display: flex;
+}
+.repo-stats__language {
+    color: #aaa;
+    margin-right: auto;
+}
+.repo-stats__stars,
+.repo-stats__forks,
+.repo-stats__watch {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    gap: 5px;
+}

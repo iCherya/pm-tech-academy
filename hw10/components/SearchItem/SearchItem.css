@@ -1,0 +1,19 @@
+.live-search__item {
+    padding: 10px;
+    border-top: 1px dashed #aaa;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+}
+.live-search__item:hover {
+    background-color: rgb(238, 238, 238);
+    color: rgb(56, 56, 56);
+}
+.live-search__item--avatar {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}

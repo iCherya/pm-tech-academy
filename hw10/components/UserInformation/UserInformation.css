@@ -1,0 +1,85 @@
+.user-info a {
+    color: black;
+}
+.user-info .wrapper {
+    display: flex;
+    gap: 10px;
+    line-height: 1.5;
+    flex-wrap: wrap;
+}
+.user-info .user-avatar {
+    width: 220px;
+    height: 220px;
+}
+.user-info .user-avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+.user-info li {
+    display: flex;
+    align-items: center;
+}
+.user-info .name {
+    font-size: 20px;
+    font-weight: bold;
+}
+.user-info .bio {
+    margin: 10px 0;
+}
+.user-info .social span,
+.user-info .activity span {
+    margin: 0 5px;
+    font-weight: bold;
+}
+.user-info .social span:first-of-type,
+.user-info .activity span:first-of-type {
+    margin-left: 0;
+}
+.user-info .company::before,
+.user-info .twitter::before,
+.user-info .email::before,
+.user-info .location::before,
+.user-info .blog::before,
+.user-info .social::before,
+.user-info .activity::before,
+.user-info .created_at::before {
+    margin-right: 10px;
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.user-info .company::before {
+    background-image: url('../../img/company.svg');
+}
+.user-info .twitter::before {
+    background-image: url('../../img/twitter.svg');
+}
+.user-info .email::before {
+    background-image: url('../../img/email.svg');
+}
+.user-info .location::before {
+    background-image: url('../../img/location.svg');
+}
+.user-info .blog::before {
+    background-image: url('../../img/blog.svg');
+}
+.user-info .social::before {
+    background-image: url('../../img/social.svg');
+}
+.user-info .activity::before {
+    background-image: url('../../img/repos.svg');
+}
+.user-info .created_at::before {
+    background-image: url('../../img/face.svg');
+}
+@media (max-width: 500px) {
+    .user-info .wrapper {
+        flex-wrap: wrap;
+    }
+    .user-info li {
+        flex-wrap: wrap;
+    }
+}
