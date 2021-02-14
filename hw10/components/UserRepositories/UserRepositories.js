@@ -69,7 +69,7 @@ export default class UserRepositories {
                             className: 'repo-stats__stars',
                             children: [
                                 createElement('img', {
-                                    src: '../../img/star.svg',
+                                    src: 'img/star.svg',
                                     alt: 'Star icon'
                                 }),
                                 createElement('span', {}, `${reposotory.stargazers_count}`)
@@ -79,7 +79,7 @@ export default class UserRepositories {
                             className: 'repo-stats__forks',
                             children: [
                                 createElement('img', {
-                                    src: '../../img/fork.svg',
+                                    src: 'img/fork.svg',
                                     alt: 'Forks icon'
                                 }),
                                 createElement('span', {}, `${reposotory.forks_count}`)
@@ -89,7 +89,7 @@ export default class UserRepositories {
                             className: 'repo-stats__watch',
                             children: [
                                 createElement('img', {
-                                    src: '../../img/watch.svg',
+                                    src: 'img/watch.svg',
                                     alt: 'Watch icon'
                                 }),
                                 createElement('span', {}, `${reposotory.watchers_count}`)
